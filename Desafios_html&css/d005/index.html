@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="iconeAba.png" type="image/x-icon">
+
+    
+    <title>Formatação Semântica</title>
+</head>
+<body>
+    <h1>O que é HTML5</h1>
+    <p>
+        Olá gente, tudo bem? Creio que a maioria de vocês já tenha ouvido sobre <abbr title="HyperText Markup Language"><strong>HTML</strong></abbr> e já saiba muito bem do que nós estamos falando. Mas, para dar uma relembrada, e até mesmo situar aqueles que estão iniciando seus estudos, vamos a algumas explicações rápidas.
+    </p>
+
+    <h2>Um pouca sobre a história</h2>
+    <p>
+        Com o surgimento da web, era necessário criar uma linguagem que fosse entendida por meios de acesso diferentes. Para tanto, Tim Berners-Lee desenvolveu o HTML, com a proposta de suprir essa necessidade. <ins>Somente na década de 1990, quando o Mosaic – browser desenvolvido por Marc Andreessen </ins>- se popularizou, o HTML ganhou força e foi adotado por outros desenvolvedores e fabricante de browsers, compartilhando as mesmas convenções. 
+        <br><br>
+        <strong>&#8674;</strong> HTML é uma abreviação de <i>Hypertext Markup Language,</i> ou seja, <i><strong>Linguagem de Marcação de Hipertexto.</strong></i> Resumindo, o HTML é uma linguagem usada para a publicação de conteúdo (texto, imagens, vídeos, áudio etc.) na web.
+        <br><br>
+        <strong>&#8674;</strong> Para que você possa entender bem, o HTML é baseado no conceito de hipertexto, que <mark style="background-color: rgb(175, 134, 245);"> são conjuntos de elementos ligados por conexões,</mark> que podem ser palavras, imagens, vídeos, áudio, documentos etc. que quando conectados, formam uma grande rede de informação. A conexão feita em um <mark style="background-color: rgb(175, 134, 245);">hipertexto é algo imprevisto que permite a comunicação de dados,</mark> organizando conhecimentos e guardando informações relacionadas.
+        <br>
+        <strong>&#8674;</strong> Resumindo, e creio que você já tenha percebido, o HTML foi criado, e melhorado, para se tornar uma linguagem independente de plataformas ou meios de acesso, diminuindo custos e fazendo com que a web não ficasse limitada a uma base proprietárias com formatos incompatíveis.
+        <br><br>
+        <strong>&#8674;</strong> <i>Em 2004, foi fundado o WHATWG (Web Hypertext Application Technology Working Group) por desenvolvedores de empresas como Mozilla, Apple e Opera, onde se iniciou o trabalho de escrever a nova versão do HTML, que seria chamado hoje de HTML5.</i>
+    </p>
+    <h2>Afinal, o que é HTML5 e quais suas principais mudanças?</h2>
+    <p>
+        <strong>&#8620;</strong> Segundo o site <strong>DEV</strong>MEDIA:
+        <blockquote>
+            <strong>O HTML5 é a nova versão do HTML4</strong> e um dos seus principais objetivos é <ins>facilitar a manipulação dos elementos,</ins> possibilitando o desenvolvedor modificar as características dos objetos de forma não intrusiva, fazendo com que isso fique transparente para o usuário final.
+        </blockquote>
+
+        <strong>&#8620;</strong> Para se ter uma ideia disso, diferente das versões anteriores, o <strong>HTML5 fornece ferramentas para o <i>CSS</i> e o <i>Javascript</i> fazerem seu trabalho da melhor possível</strong> de forma que um web site ou aplicação continue leve e funcional.
+        <br><br>
+        <strong>&#8620;</strong> Algumas tags foram modificadas, outras criadas e algumas descontinuadas. As versões anteriores do HTML não eram padronizadas para criação de seções comuns e específicas como rodapé, cabeçalho, slidebar, menus etc.
+        <br><br>
+        <strong>&#8620;</strong> Houve também modificações na forma em que escrevemos o código e organizamos a página. <ins>Ela passou a ser mais semântica com menos códigos, aumentando a interatividade sem a necessidade de instalação de plug-ins,</ins> que em alguns casos, causa perda de performance. É um código interpolável, ou seja, pronto para futuros dispositivos, facilitando a reutilização da informação de diversas maneiras.
+        <br><br>
+        <strong>&#8620;</strong> Mas, caso você esteja pensando <q>vou ter de refazer todo o meu web site</q>, a WHATWG tem mantido o foco na retro compatibilidade, ou seja, <mark style="background-color: rgb(175, 134, 245);">você não irá precisar refazer todo o trabalho para se adequar aos novos conceitos e regras.</mark>
+    </p>
+    <h2>Etrutura básica</h2>
+    <p>
+        A estrutura básica do <i>HTML5</i> foi mantida, sofrendo uma pequena alteração no <i>DOCTYPE</i>. Abaixo podemos ver no exemplo:
+        <br>
+        <strong>Listagem 1:</strong> <small>Estrutura básica</small>
+        <br><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGoVU_dqKOQEQNfoPbD3WVvNmCyHcxRySVDq-5eEH0MV9ckfEr" alt="Código básico">
+    </p>
+    <h3>O DOCTYPE</h3>
+    <p>
+        <strong>Listagem 2:</strong> <small>O DOCTYPE</small>
+        <br><br>
+    
+        <strong><code> &lt;!DOCTYPE HTML&gt; </code></strong>
+        <br>
+        Embora o DOCTYPE não seja uma tag HTML, ela deve ser a primeira linha antes do código, pois se tratar de uma instrução que indica ao navegador ou outro meio qual a versão de marcação o código foi escrito.
+        <br><br>
+        Em versões anteriores, era necessário referenciar o DTD <i>(Document Type Definition)</i> diretamente no código DOCTYPE. <strong>Com o HTML5, essa referência fica por responsabilidade do próprio navegador.</strong>
+    </p>
+    <h3>Elemento HTML</h3>
+    <p>
+    <strong>Liatagem 3:</strong> <small>Elemento HTML</small>
+    <br><br>
+    <strong><code> &lt;html lang=”pt-br”&gt; </code></strong>
+    <br>
+    Agora começamos a marcação propriamente dita. Para exemplificar, pense no código <abbr title="HyperText Markup Language"><i>HTML5</i></abbr> como uma árvore, onde existem elementos pais ou filhos, e sempre, o elemento vai estar no topo dessa árvore, sendo assim, o elemento mais importante.
+    <br><br>
+    Creio que foi notada a presença de um atributo no elemento. O <i>“lang”</i> é necessário para que os <i>user-agents</i> saibam qual é a linguagem principal do documento.É necessário lembrar que, o atributo <i>“lang”</i>, não está restrito somente ao elemento , podendo ser utilizado em qualquer outro elemento indicando a linguagem do texto representado.
+    </p>
+
+    <h3>HEAD</h3>
+    <p>
+        Este é o local onde fica a “parte inteligente” do web site. No HEAD, ficam os metadados, ou seja, <ins>informações sobre a página e sobre o conteúdo publicado.</ins>
+    </p>
+
+    <h3>Metatag Charset</h3>
+    <p>
+        <strong>Listagem 4:</strong> <small> Metatag Charset</small>
+        <br><br>
+        <strong><code> &lt;meta charset="UTF-8"</code></strong>
+        <br>
+        Este item chaveia a tabela de caracteres que vai ser utilizada pelo seu sistema.
+    </p>
+
+    <p>
+        Cabe aqui uma explicação importante, bastante útil aos desenvolvedores e futuros desenvolvedores. A internet, por tradição, foi desenvolvida sob princípios de que não haveria limites para acesso, sendo assim, não importa se alguém estiver aqui no Brasil ou lá na China, ela pode acessar qualquer conteúdo disponível na web.
+        <br>
+        Partindo desse princípio, <mark style="background-color: rgb(175, 134, 245);">foi criada uma tabela que suprisse essas necessidades, que recebeu o nome de Unicode.</mark> Essa tabela comporta algo em torno de um milhão de caracteres e a maioria dos browsers a suporta plenamente. Ao invés de cada região ter a sua tabela de caracteres, é muito mais sensato ter uma tabela com o maior número de caracteres possível, e fazendo uso dela no seu sistema, você garantirá que ele será bem visualizado no Brasil, China ou em qualquer outro lugar do mundo.
+        <br><br>
+        <i>O que o Unicode faz é fornecer um único número para cada caractere, não importa a plataforma, nem o programa, nem a língua.</i>
+        <br><br>
+        Aqui está só o início, um pouco para que nós possamos entender o HTML5, e claro, começar a fazer uso dessa linguagem de marcação. Em outras oportunidades, daremos continuidade, falando mais das novidades e já desenvolvendo na prática.
+        <br><br>
+        Com isso, finalizo este artigo e até o próximo.
+        <br>
+        <bdo dir="rtl">Um abraço! &#x1F49C</bdo>
+    </p>
+
+</body>
+</html>
